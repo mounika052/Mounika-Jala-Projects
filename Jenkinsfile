@@ -4,12 +4,12 @@ pipeline {
     //     pollSCM('* * * * *')
     // }
     environment {
-        AWS_ACCOUNT_ID = '156172784305'
+        AWS_ACCOUNT_ID = '296062588728'
         AWS_REGION = 'ap-south-1'
         ECR_REPO_NAME = 'acr-repo'
         IMAGE_TAG = 'latest'  // You can dynamically set the build version
         ECR_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO_NAME}:${IMAGE_TAG}"
-        EMAIL = "shazathkhan1@gmail.com"
+        EMAIL = "mounikachowdary532@gmail.com"
     }
 
     stages {
