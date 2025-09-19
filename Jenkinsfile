@@ -58,7 +58,7 @@ pipeline {
                 docker pull $ECR_URI
                 docker stop app || true
                 docker rm app || true
-                docker run -d --name app -p 8000:80 $ECR_URI
+                docker run -d --name app -p 8000:5000 $ECR_URI
                 '''
             }
         }
