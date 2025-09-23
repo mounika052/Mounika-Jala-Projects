@@ -9,7 +9,7 @@ pipeline {
         ECR_REPO_NAME = 'acr-repo'
         IMAGE_TAG = 'latest'  // You can dynamically set the build version
         ECR_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO_NAME}:${IMAGE_TAG}"
-        EMAIL = "mounikapathuri30g@gmail.com"
+        EMAIL = "mounikapathuri30@gmail.com"
     }
 
     stages {
